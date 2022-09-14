@@ -1,0 +1,7 @@
+PUT  http://localhost:8000/wilders/ad5144ad-0c05-4ef1-aaeb-1307fe661fc7
+Content-Type: application/json
+
+{
+    "firstName":"Michel",
+    "lastName":"Wilder"
+}
