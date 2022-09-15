@@ -1,0 +1,22 @@
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+  }
+    
+header {
+    background-color: #F76C6C;
+    color: #fff;
+}
+    
+footer {
+    border-top: 2px solid #F76C6C;
+} 
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
