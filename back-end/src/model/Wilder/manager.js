@@ -53,18 +53,19 @@ const addSkillToWilder = async (wilderId, skillId) => {
     const wilderRepository = await getWilderRepository();
     const skillRepository = await getSkillRepository();
 
-    const existingWilder = await wilderRepository.findOneBy({id:wilderId});
+    const wilder = await wilderRepository.findOneBy({id:wilderId});
 
-    if(!existingWilder)
+    if(!wilder)
     {
         throw Error ("Wilder non trouver")
     }
-    const existingSkill = await skillRepository.findOneBy({id:skillId})
-    if(!existingSkill) {
+    const skill = await skillRepository.findOneBy({id:skillId})
+    if(!skill) {
         throw Error ("Skill non trouver")
     }
-    existingWilder.skills = [...existingWilder.skills, existingSkill];
-    return wilderRepository.save(existingSkill)
+    console.log(wilder)
+    wilder.skills = [...wilder.skills, skill];
+    return wilderRepository.save(wilder)
 }
 
 

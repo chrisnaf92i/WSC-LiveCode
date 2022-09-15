@@ -9,7 +9,7 @@ const dataSource = new TypeOrm.DataSource({
     database:"wildersdb.sqlite",
     synchronize:true,
     entities:[Wilder, School, Skill],
-    logging:["query", "error"]
+    /* logging:["query", "error"] */
 
 })
 
