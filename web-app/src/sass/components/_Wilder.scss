@@ -1,4 +1,6 @@
 .card {
+    position:relative;
+
     padding: 20px;
     border: 1px solid #c9c9c9;
     border-radius: 7px;
@@ -11,6 +13,16 @@
         max-width: 100%;
         height: auto;
     }
+
+    .trainerBadge{
+        position:absolute;
+        top:0;
+        right:0;
+        color:white;
+        background-color: #F76C6C;
+        border-end-start-radius: 8px;
+    }
+
     & h3, & h4{
         color: #F76C6C;
         display: grid;
